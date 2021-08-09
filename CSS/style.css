@@ -50,30 +50,21 @@ body {
   .mainNavItem3 a:hover {
     color:#103A72;
   }
-  #heroGrid {
+  #heroSection {
     margin: 0% 0%;
-    display: grid;
+    display: inline-flex;
     height: 520px;
-    grid-template-rows: 1fr;
-    grid-template-columns: 35% 65%;
-    grid-template-areas:
-    "heroImg LizLakedescription"
-   ;
   }
-  #LizLakedescription {
-    grid-area: LizLakedescription;
+  .LizLakedescription {
+    display: inline-flex;
     text-align: center;
+    word-wrap: normal;
     color: #FFFFFF;
     font-size: 28px;
-    line-height: 42px;
+    line-height: auto;
     padding: 10%;
     padding-top: 2rem;
     background-color: #103A72;
-  }
-  #heroImg {
-    grid-area: heroImg;
-    background-image: url(../Images/Headshot-1.png);
-    display: flex;
   }
 .viewresume {
     margin: 10% 7.33%;
@@ -148,14 +139,27 @@ body {
   align-items: center;
 }
       
-@media only screen and (max-width: 600px) {
-#herogrid {
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "heroImg" 
-  "LizLakedescription"
- ;
- height: auto;
+@media only screen and (max-width: 960px) {
+#heroSection {
+  flex-direction: column;
+  align-items: center;
+}
+}
+@media only screen and (max-width: 960px) {
+.LizLakedescription {
+    text-size-adjust:inherit;
+    word-wrap: inherit;
+    line-height: auto;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .mainNavigation {
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .roundbuttons {
+    flex-direction: column;
+    align-items: stretch;
 }
 }
