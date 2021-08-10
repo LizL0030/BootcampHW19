@@ -1,6 +1,5 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0% 0%;
   font-family: 'Montserrat';
 }
 .mainHeader {
@@ -32,12 +31,12 @@ body {
 }
 .mainNavItem1 a {
   padding: 0 16px;
-	color:#D64168;
+	color:#FFFFFF;
 	text-decoration: none;
 }
 .mainNavItem2 a {
   padding: 0 16px;
-	color: white;
+	color:#D64168;
 	text-decoration: none;
 }
 .mainNavItem3 a {
@@ -46,9 +45,6 @@ body {
 	text-decoration: none;
 }
 .mainNavItem1 a:hover {
-	color:#103A72;
-}
-.mainNavItem2 a:hover {
 	color:#103A72;
 }
 .mainNavItem3 a:hover {
@@ -126,12 +122,37 @@ p {
   align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1080px) {
+  .mainNavigation {
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+  }
+  .mainHeader {
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+    .mainNavigation {
+      flex-direction: column;
+      align-items: center;
+      font-size: 18px;
+    }
+    .mainHeader {
+      flex-direction: column;
+      justify-content:space-evenly;
+    } 
+  } 
+
+@media only screen and (max-width: 640px) {
   .flexContainer {
     display: column;
-    width: 100%;
+    width: 90%;
   }
   .grid-container {
+    width: 90%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
