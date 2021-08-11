@@ -1,3 +1,36 @@
+
+Pull requests
+Issues
+Marketplace
+Explore
+@LizL0030
+lauriewalk3r /
+BootcampHW19
+forked from LizL0030/BootcampHW19
+
+0
+0
+
+    1
+
+Code
+Pull requests
+Actions
+Projects
+Wiki
+Security
+
+    Insights
+
+BootcampHW19/CSS/style.css
+@lauriewalk3r
+lauriewalk3r edits to liz's mediaqueries
+Latest commit e5bbcc0 5 hours ago
+History
+2 contributors
+@LizL0030
+@lauriewalk3r
+186 lines (180 sloc) 3.28 KB
 body {
     margin: 0% 0%;
     font-family: 'Montserrat';
@@ -50,25 +83,43 @@ body {
   .mainNavItem3 a:hover {
     color:#103A72;
   }
-  #heroSection {
+  #heroGrid {
     margin: 0% 0%;
-    display: inline-flex;
-    height: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:
+    "heroImg LizLakedescription"
+   ;
+   align-items: center;
+   background-color: #103A72;
   }
-  .LizLakedescription {
-    display: inline-flex;
-    background-color: #103A72;
-    height: 520px;
-  }
-  .LizLaketext {
+  #LizLakedescription {
+    grid-area: LizLakedescription;
     text-align: center;
     color: #FFFFFF;
-    font-size: 3.5vh;
-    line-height: auto;
-    padding: 10%;
+    font-size: 28px;
+    line-height: 42px;
+    padding: 0 10%;
   }
+  #heroImg {
+    grid-area: heroImg;
+    margin: 0 auto;
+    border: 2px solid red;
+  }
+  #heroImg img {
+    width: 320px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+#roundButtons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
 .viewresume {
-    margin: 10% 7.33%;
     background-color:#ADBB0D;
     color: white;
     width: 250px;
@@ -76,12 +127,11 @@ body {
     font-size: 24px;
     font-weight: 400;
     border-radius: 50%;
-    display: inline-flex;
-    align-items: center; 
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 .uxed {
-    margin: 10% 7.33%;
     background-color:#D64168;
     color: #FFFFFF;
     width: 250px;
@@ -89,12 +139,11 @@ body {
     font-size: 24px;
     font-weight: 400;
     border-radius: 50%;
-    display: inline-flex;
-    align-items: center; 
+    display: flex;
     justify-content: center;
+    align-items: center;
   }
 .lmsdesign {
-    margin: 10% 7.33%;
     background-color:#103A72;
     color: #FFFFFF;
     width: 250px;
@@ -102,9 +151,9 @@ body {
     font-size: 24px;
     font-weight: 400;
     border-radius: 50%;
-    display: inline-flex;
-    align-items: center; 
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 .viewresume a {
     color: #fff;
@@ -140,11 +189,26 @@ body {
   align-items: center;
 }
       
-@media only screen and (max-width: 1080px) {
-  #heroSection {
-    flex-direction: column;
-    align-items: center;
+@media only screen and (max-width: 1200px) {
+  #heroGrid {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "heroImg" 
+    "LizLakedescription"
+  ;
+  align-items: center;
   }
+  #LizLakedescription {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 0;
+    border: 1px solid yellow;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
   .mainNavigation {
     flex-direction: column;
     align-items: center;
@@ -155,20 +219,14 @@ body {
     justify-content:space-evenly;
     align-items: center;
   }
-  .heroImage {
-    display: none;
-  }
-  .viewresume .uxed .lmsdesign {
-    margin: 0%;
-  }
 }
-@media only screen and (max-width: 768x) {
-  .LizLaketext {
-    font-size: 2.0vh;
+
+@media only screen and (max-width: 800px) {
+  #roundButtons {
+    flex-direction: column;
+    align-items: center;
   }
-}
-@media only screen and (max-width: 640x) {
-  .LizLaketext {
-    font-size: 2.0vh;
+  .viewresume, .uxed {
+    margin-bottom: 4%;
   }
 }
