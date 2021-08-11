@@ -1,36 +1,3 @@
-
-Pull requests
-Issues
-Marketplace
-Explore
-@LizL0030
-lauriewalk3r /
-BootcampHW19
-forked from LizL0030/BootcampHW19
-
-0
-0
-
-    1
-
-Code
-Pull requests
-Actions
-Projects
-Wiki
-Security
-
-    Insights
-
-BootcampHW19/CSS/style.css
-@lauriewalk3r
-lauriewalk3r edits to liz's mediaqueries
-Latest commit e5bbcc0 5 hours ago
-History
-2 contributors
-@LizL0030
-@lauriewalk3r
-186 lines (180 sloc) 3.28 KB
 body {
     margin: 0% 0%;
     font-family: 'Montserrat';
@@ -105,10 +72,9 @@ body {
   #heroImg {
     grid-area: heroImg;
     margin: 0 auto;
-    border: 2px solid red;
   }
   #heroImg img {
-    width: 320px;
+    width: 480px;
     height: auto;
     border-radius: 50%;
   }
@@ -204,7 +170,6 @@ body {
     padding-right: 5%;
     padding-bottom: 5%;
     padding-top: 0;
-    border: 1px solid yellow;
   }
 }
 
