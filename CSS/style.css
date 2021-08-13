@@ -65,8 +65,8 @@ body {
     grid-area: LizLakedescription;
     text-align: center;
     color: #FFFFFF;
-    font-size: 28px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: 36px;
     padding: 0 10%;
   }
   #heroImg {
@@ -74,7 +74,7 @@ body {
     margin: 0 auto;
   }
   #heroImg img {
-    width: 360px;
+    width: 300px;
     height: auto;
     border-radius: 50%;
   }
@@ -165,11 +165,14 @@ body {
   ;
   align-items: center;
   }
+  #heroImg {
+    padding: 2%;
+  }
   #LizLakedescription {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    padding-top: 0;
+    max-height: 1fr;
+    font-size: 20px;
+    padding: auto;
+    line-height: auto;
   }
 }
 
