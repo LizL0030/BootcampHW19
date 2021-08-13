@@ -14,16 +14,12 @@ body {
   .siteLogo {
     display: flex;
     align-items: center;
+    color: white;
     font-size: 36px;
   }
-  
   .logoImage {
-    width: 68px;
-    height: auto;
-    border-radius: 16px;
-    margin: 0 16px 0 0;
+    padding: 16px;
   }
-  
   .mainNavigation {
     display: flex;
     align-items: center;
