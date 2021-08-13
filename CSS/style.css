@@ -7,7 +7,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
-    background-color: #8bd1f1;
+    background-color: #ADBB0D;
     color: white;
     height: 200px;
   }
@@ -74,7 +74,7 @@ body {
     margin: 0 auto;
   }
   #heroImg img {
-    width: 360px;
+    width: px;
     height: auto;
     border-radius: 50%;
   }
