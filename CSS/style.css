@@ -105,7 +105,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-.lmsdesign {
+.design {
     background-color:#103A72;
     color: #FFFFFF;
     width: 250px;
@@ -131,11 +131,11 @@ body {
 .uxed a:hover {
     font-weight: 900;
 }
-.lmsdesign a {
+.design a {
     color: #fff;
     text-decoration: none;
 }
-.lmsdesign a:hover {
+.design a:hover {
     font-weight: 900;
 }
 .footernavigation {
